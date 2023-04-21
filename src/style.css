@@ -1,0 +1,90 @@
+:root {
+  --primary-color: rgba(101, 31, 158, 0.844);
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 96px !important;
+}
+
+h2 {
+  font-size: 48px !important;
+}
+
+h3 {
+  font-size: 24px !important;
+  opacity: 0.7 !important;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+#contactbtn {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  text-transform: capitalize;
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+#aboutbtn {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  text-transform: capitalize;
+  border: 1px solid var(--primary-color);
+  background-color: white;
+}
+
+#contactbtn > a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+#aboutbtn > a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+}
+
+.paragraphs {
+  margin: 10px;
+}
+
+#aboutParagraph {
+  text-align: center;
+  margin: 30px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+#email {
+  text-decoration: none;
+  font-size: 26px;
+  margin: 10px;
+  color: var(--primary-color);
+}
+
+#email:hover {
+  text-decoration: underline;
+}
