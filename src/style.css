@@ -1,7 +1,7 @@
 :root {
   --primary-color: rgba(101, 31, 158, 0.844);
   --secondary-color: #f5f2fe;
-  --box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  --box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
@@ -17,7 +17,7 @@ h3 {
   opacity: 0.7 !important;
 }
 
-.links {
+.navigation-links {
   display: flex;
   justify-content: center;
   margin-top: 40px;
@@ -55,6 +55,22 @@ h3 {
   font-weight: bold;
 }
 
+#projectbtn {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  text-transform: capitalize;
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+#projectbtn > a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
 button:hover {
   cursor: pointer;
 }
@@ -87,4 +103,30 @@ p {
 
 #email:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px !important;
+  }
+  h2 {
+    font-size: 30px !important;
+    text-align: center !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+  }
+
+  p {
+    text-align: center !important;
+    margin-bottom: 20px !important;
+  }
+
+  #projectbtn {
+    display: block !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    width: 70%;
+  }
 }
