@@ -134,15 +134,25 @@ p {
   text-decoration: underline;
 }*/
 
+#contact {
+  font-family: var(--primary-font) !important;
+  font-weight: bold !important;
+}
+
 @media (max-width: 576px) {
   .project-description {
     text-align: center;
   }
-  h1 {
+  h1,
+  .content h1 {
     font-size: 48px !important;
   }
   h2 {
     font-size: 30px !important;
+  }
+
+  #work-heading {
+    margin-bottom: 30px !important;
   }
 
   h3 {
@@ -166,6 +176,9 @@ p {
 
   .message {
     text-align: center;
+  }
+  footer #email {
+    font-size: 18px;
   }
 }
 
@@ -214,11 +227,6 @@ p {
   font-size: 14px;
 }
 
-#work-heading {
-  font-size: 52px !important;
-  line-height: 60px;
-}
-
 @media (max-width: 991px) {
   .about-container {
     text-align: center;
@@ -243,10 +251,13 @@ p {
 .projects img {
   border-radius: 15px;
 }
+.contact-info {
+  font-size: 16px;
+}
 
 .contact-info a {
-  font-size: 20px;
-  margin: 30px 0;
+  font-weight: normal;
+  margin: 30px 10px !important;
   color: black;
   text-decoration: none;
 }
@@ -256,11 +267,13 @@ p {
 
 ul {
   list-style: none;
+
   padding: 0 !important;
 }
 
 li {
-  display: inline;
+  font-weight: bold;
+  margin: 20px 0;
 }
 
 .send {
@@ -272,43 +285,53 @@ li {
   margin: 5px !important;
 }
 
-/*FOOTER COPIADO*/
+/* Mi footer */
 
-footer {
-  margin: 60px 0;
-}
-
-footer .contact-box {
-  background: var(--secondary-color);
-  padding: 30px 120px;
+.work-inquiry {
+  background-color: var(--secondary-color);
+  margin: 50px;
+  padding: 30px 100px;
   border-radius: 10px;
 }
 
-footer .contact-box p {
-  margin: 0;
+.work-inquiry h2 {
+  font-family: var(--primary-font);
+  font-weight: bold;
 }
 
-footer .email-link {
-  text-decoration: none;
+.work-inquiry h3 {
+  font-size: 18px !important;
+}
+
+footer a {
   color: black;
+  text-decoration: none;
   font-size: 24px;
 }
-
-footer .email-link:hover {
-  color: var(--branding-color);
+footer a:hover {
+  color: var(--primary-color);
 }
 
-footer .social-links a {
+footer .logos a {
   margin: 0 20px;
-  color: var(--branding-color);
-  background: var(--secondary-color);
-  padding: 10px 14px;
-  border-radius: 50%;
+  padding: 10px;
+  border-radius: 50px;
+  color: var(--primary-color) !important;
+  background-color: var(--secondary-color);
   font-size: 18px;
-  transition: all 100ms ease-in-out;
 }
 
-footer .social-links a:hover {
-  color: white;
-  background: var(--branding-color);
+.logos a:hover {
+  color: var(--secondary-color) !important;
+  background-color: var(--primary-color);
+}
+
+footer p,
+footer p a {
+  font-size: 14px;
+}
+
+footer p a {
+  text-decoration: underline;
+  color: blue;
 }

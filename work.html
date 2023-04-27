@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About me - Aldana Prieto</title>
+    <title>Work - Aldana Prieto</title>
     <meta
       name="description"
-      content="About Aldana Prieto, a front-end developer based in South America"
+      content="Aldana Prieto's work. Aldana is a front-end developer based in South America"
     />
     <link rel="stylesheet" href="/src/style.css" />
     <link
@@ -30,8 +30,8 @@
   <body>
     <nav class="navbar navbar-expand-lg" style="background-color: #b6bcb1">
       <div class="container-fluid ms-3">
-        <a class="navbar-brand" href="/index.html"
-          ><i class="fa-solid fa-laptop-code m-1 p-1"></i>Aldana Prieto</a
+        <a class="navbar-brand" href="/index.html" title="Homepage">
+          <i class="fa-solid fa-laptop-code m-1 p-1"></i> Aldana Prieto</a
         >
         <button
           class="navbar-toggler"
@@ -46,18 +46,34 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
-            <a class="nav-link active" href="/about.html">About me</a>
-            <a class="nav-link" href="/work.html">Work</a>
-            <a class="nav-link" href="/contact.html">Contact me</a>
+            <a
+              class="nav-link"
+              aria-current="page"
+              href="/index.html"
+              title="Homepage"
+              >Home</a
+            >
+            <a class="nav-link" href="/about.html" title="About Aldana"
+              >About</a
+            >
+            <a class="nav-link active" href="/work.html" title="Aldana's work"
+              >Work</a
+            >
+            <a class="nav-link" href="/contact.html" title="Contact Aldana"
+              >Contact</a
+            >
           </div>
         </div>
       </div>
     </nav>
 
-    <h1 class="text-center m-5" id="work-heading">
+    <h2
+      class="text-center m-5"
+      id="work-heading"
+      style="font-family: 'Playfair Display', 'serif'; font-weight: bold"
+    >
       Check out what I've been working on!
-    </h1>
+    </h2>
 
     <div class="container projects">
       <div class="row">
@@ -70,7 +86,11 @@
           <div class="text-center mb-5">
             <h3 class="m-2">Weather Project</h3>
             <p class="mb-4">Build with HTML, CSS and JavaScript</p>
-            <a class="btn btn-primary" href="#" title="Weather Project"
+            <a
+              class="btn btn-primary"
+              href="https://euphonious-gumdrop-6e4376.netlify.app/"
+              target="_blank"
+              title="Weather Project"
               >Launch weather app</a
             >
           </div>
@@ -84,13 +104,65 @@
           <div class="text-center mb-5">
             <h3 class="m-2">Donuts Project</h3>
             <p class="mb-4">Build with HTML, CSS and JavaScript</p>
-            <a class="btn btn-primary" href="#" title="Donuts Project"
+            <a
+              class="btn btn-primary"
+              href="https://chic-melba-563f25.netlify.app/"
+              target="_blank"
+              title="Donuts Project"
               >Lauch donuts app</a
             >
           </div>
         </div>
       </div>
     </div>
+
+    <footer class="m-4">
+      <div class="work-inquiry d-flex justify-content-between d-none d-md-flex">
+        <div>
+          <h2>Work Inquiry</h2>
+          <h3>Let´s work together</h3>
+        </div>
+        <div>
+          <a
+            href="/contact.html"
+            class="btn btn-primary m-3"
+            title="Contact Aldana Prieto"
+            >Contact me</a
+          >
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a
+          href="mailto:aldanaprieto.d@gmail.com"
+          class="d-inline mt-4"
+          id="email"
+          >aldanaprieto.d@gmail.com</a
+        >
+      </div>
+      <div class="logos d-flex justify-content-center mt-5">
+        <a
+          href="https://www.linkedin.com/in/aldana-iriel-prieto-duffau-02815326b/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="https://github.com/aldana-p" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <p class="text-center mt-5">
+        This website was coded by Aldana Prieto, and is
+        <a
+          href="https://github.com/aldana-p/portfolio"
+          target="_blank"
+          class="d-inline"
+          >open-sourced.</a
+        >
+      </p>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
